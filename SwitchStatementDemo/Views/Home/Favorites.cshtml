@@ -1,0 +1,12 @@
+﻿@model SwitchStatementDemo.ViewModel.ProductViewModel
+@{
+    ViewBag.Title = "About";
+}
+<h2>Favorites</h2>
+
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li>@product.Title - @product.Description ($@product.Price.ToString("C"))</li>
+    }
+</ul>

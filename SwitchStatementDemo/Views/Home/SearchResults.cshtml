@@ -1,0 +1,9 @@
+﻿@model SwitchStatementDemo.ViewModel.ProductViewModel
+<h2>Search Results</h2>
+
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li>@product.Title - @product.Description ($@product.Price.ToString("C"))</li>
+    }
+</ul>
